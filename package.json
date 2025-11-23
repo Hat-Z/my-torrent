@@ -2,6 +2,7 @@
   "name": "my-torrent",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +17,8 @@
     "url": "https://github.com/Hat-Z/my-torrent/issues"
   },
   "homepage": "https://github.com/Hat-Z/my-torrent#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bencode": "^4.0.0"
+  }
 }

@@ -1,4 +1,6 @@
 'use strict';
-const fs = require('fs');
-const torrent = fs.readFileSync('mai-san.torrent');
-console.log(torrent.toString('utf8'));
+import bencode from 'bencode';
+import fs from 'fs';
+
+const torrent = bencode.decode(fs.readFileSync('mai-san.torrent'));
+console.log(torrent);
